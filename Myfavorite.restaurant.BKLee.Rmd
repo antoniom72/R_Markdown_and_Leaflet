@@ -1,0 +1,16 @@
+---
+title: "My favorite restaurant "
+author: "BK Lee"
+date: "19 Feb 2018"
+output: html_document
+---
+## It's awesome bistro!!
+## I'll treat you.
+```{r}
+library(leaflet)
+leaflet() %>% addTiles() %>% 
+addMarkers(lat=37.517335   , lng=127.102223, popup="My favorite restaurant") %>%
+setView (lat=37.517335   , lng=127.102223, zoom=15)
+```
+
+
